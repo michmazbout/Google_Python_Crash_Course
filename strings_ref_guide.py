@@ -50,3 +50,15 @@ print(output)
 
 output = "{fruit} are {price} per pound, and you have {weight} pounds of {fruit}.".format(weight=weight, fruit=fruit, price=per_pound)
 print(output)
+
+
+# Print the receipt for the customer. The format string ":10,.2f" 
+# works as follows:
+#   - ":10" makes the output 10 characters wide.
+#   - "," inserts thousands separators between groups of digits.
+#   - ".2" limits the output to two digits after the decimal.
+#   - "f" tells Python to expect a floating-point number.
+#
+print("Subtotal: ${:10,.2f}".format(subtotal))
+print("Sales Tax: ${:10,.2f}".format(tax_amt))
+print("Total: ${:10,.2f}".format(total))
